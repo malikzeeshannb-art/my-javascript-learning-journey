@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="description" content="at this website we are builting a Modern Frontend Web Development for Practical Approach">
+    <meta property="og:title" content="Modren Front-end Web Approach">
+    <meta property="og:description" content="at this website we are builting a Modern Frontend Web Development for Practical Approach">
+    <meta property="og:url" content="https://malikzeeshannb-art.github.io/my-front-end-study-journey/">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2017/12/22/17/28/nature-3033979_1280.jpg">
+    <meta preperty="og:type" content="website">
+    <title>CSS GRID USAGES</title>
+   <style>
+    .layout {
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: 100px 1fr 100px;
+        grid-template-areas: "header"
+                            "main"
+                            "footer";
+        min-height: 100vh;
+    }
+    header {
+        grid-area: header;
+        background-color: rgb(75, 75, 75);
+    }
+    
+    aside {
+        display: none;
+        grid-area: aside;
+        background-color: rgb(216, 109, 109);
+    }
+    main {
+        grid-area: main;
+        background-color: rgb(63, 153, 153);
+    }
+    footer {
+        grid-area: footer;
+        background-color: blueviolet;
+    }
+    @media (min-width:768px) {
+        .layout {
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: "header header"
+                            "aside main"
+                            "footer footer";
+    }
+    aside {
+        display: block;
+    }
+    }
+    @media (min-width:1200px) {
+        .layout {
+        grid-template-columns: 300px 1fr;
+         grid-template-rows: 100px 1fr 100px;
+        }
+    }
+    nav {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-between;
+        padding: 10px 1rem;
+        align-items: center;
+        margin-inline: auto;
+    }
+    nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        align-items: center;
+    }
+    ul a {
+        text-decoration: none;
+        color: white;
+    }
+    nav h1 {
+        font-size: 2rem;
+        color: rgb(246, 144, 0);
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 10px 20px;
+        gap: 10px;
+    }
+    .card {
+        border:  1px solid black;
+        padding: 20px;
+        border-radius: 1rem;
+    }
+    @media (min-width:768px) {
+         .cards-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px 20px;
+    }
+    }
+   </style>
+</head>
+<body>
+    <div class="layout">
+        <header>
+            <nav>
+                <h1>logo</h1>
+                <ul>
+                    <li><a class="nav-link" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#feature">Features</a></li>
+                     <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <aside>
+
+        </aside>
+        <main>
+            <section class="cards-section">
+            <div class="cards-container">
+                <div class="card">
+                    <h3 class="card__title">Zenith E-Commerce Platform</h3>
+                    <p>A high-performance online store built with a mobile-first approach, focusing on seamless user journeys and clean checkout flows.</p>
+                    <button type="button" class="btn btn--primary btn__sm">View Project</button>
+                </div>
+
+                    <div class="card">
+                    <h3 class="card__title">Nexus Corporate Identity</h3>
+                    <p>I get a complete rebranding project for a fintech startup, including a modern visual language and a highly structured landing page.</p>
+                    <button type="button" class="btn btn--primary btn__sm">View Project</button>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">Aura Creative Portfolio</h3>
+                    <p>A minimalist, grid-based gallery designed for photographers to showcase high-resolution visual stories without compromising load speed.</p>
+                    <button type="button" class="btn btn--primary btn__sm">View Project</button>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">Pulse Analytics Dashboard</h3>
+                    <p>A data-heavy interface simplified through intuitive UI patterns and professional typography for better readability.</p>
+                    <button type="button" class="btn btn--primary btn__sm">View Project</button>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">Velocity SaaS Landing Page</h3>
+                    <p>A conversion-optimized landing page featuring scalable components and a polished, production-ready CSS structure.</p>
+                    <button type="button" class="btn btn--primary btn__sm">View Project</button>
+                </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+
+        </footer>
+    </div>
+    <script src="apps/app.js"></script>
+</body>
+</html>
