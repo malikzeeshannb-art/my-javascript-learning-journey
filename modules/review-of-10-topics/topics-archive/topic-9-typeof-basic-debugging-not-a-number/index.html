@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>typeof, NaN, basic debugging</title>
+</head>
+<body>
+    <script>
+        // ========== TYPEOF OPERATOR ========== 
+        console.log(typeof 42); // Output: "number"
+        console.log(typeof "Hello"); // Output: "string"
+        console.log(typeof true); // Output: "boolean"
+        console.log(typeof undefined); // Output: "undefined"
+        console.log(typeof null); // Output: "object" (this is a quirk in JavaScript)
+
+        // ========== NaN (Not-a-Number) ========== 
+        let result = 0 / 0; // This will result in NaN
+        console.log(result); // Output: NaN
+        console.log(isNaN(result)); // Output: true
+
+        // ========== BASIC DEBUGGING ========== 
+        let a = 10;
+        let b = 20;
+        let sum = a + b;
+        console.log("The sum of a and b is: " + sum); // Output: The sum of a and b is: 30
+    </script>
+</body>
+</html>

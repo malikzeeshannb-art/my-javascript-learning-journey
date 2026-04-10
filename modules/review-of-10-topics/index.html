@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Review Script</title>
+</head>
+<body>
+    <script>
+        let userName = "Zeeshan";
+        let userAge = 22;
+        let isLoggedIn = true;
+        const userDob = "01-01-2000"; // This line will cause an error due to the incorrect use of 'Const'
+
+        console.log("User:", userName);
+        console.log("Age:", userAge);
+        console.log("Online:", isLoggedIn);
+        console.log("Date of Birth:", userDob);
+
+        if (isLoggedIn) {
+
+
+            console.log("User is online");
+        } else {
+            console.log("User is offline");
+        }
+
+
+
+        
+        if (userAge > 25) {
+            console.log("User is older than 25");
+        } else {
+            console.log("User is 25 or younger");
+        }
+        if (userDob === "01-01-2000") {
+            console.log("User was born on January 1, 2000");
+        } else {
+            console.log("User's date of birth is not January 1, 2000");
+        }   
+    </script>
+</body>
+</html>

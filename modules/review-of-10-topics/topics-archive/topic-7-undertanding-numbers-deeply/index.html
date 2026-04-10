@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>understanding  Numbers in javascript deeply</title>
+</head>
+<body>
+    <script>
+        // ========== NUMBER BASICS ==========
+        let num = 42;
+        console.log(num); // Output: 42
+        console.log("The answer is: " + num); // Output: The answer is: 42
+        console.log(`The answer is: ${num}`); // Output: The answer is: 42
+
+        // ========== NUMBER METHODS - TO STRING ==========
+        console.log(num.toString()); // Output: "42"
+        console.log((123).toString()); // Output: "123"
+
+        // ========== NUMBER METHODS - PARSE ==========
+        console.log(parseInt("42")); // Output: 42
+        console.log(parseFloat("3.14")); // Output: 3.14
+        console.log(Number("42")); // Output: 42
+        console.log(Number("Hello")); // Output: NaN
+
+        // ========== NUMBER METHODS - FIXED ==========
+        let pi = 3.14159;
+        console.log(pi.toFixed(2)); // Output: 3.14
+        console.log(pi.toFixed(5)); // Output: 3.14159
+
+        // ========== NUMBER METHODS - MATH ==========
+        console.log(Math.PI); // Output: 3.141592653589793
+        console.log(Math.sqrt(16)); // Output: 4
+        console.log(Math.pow(2, 3)); // Output: 8
+        console.log(Math.random()); // Output: Random number between 0 and 1
+
+        // ========== NUMBER METHODS - ROUNDING ==========
+        console.log(Math.round(4.7)); // Output: 5
+        console.log(Math.floor(4.7)); // Output: 4
+        console.log(Math.ceil(4.1)); // Output: 5
+
+        // ========== NUMBER COMPARISON ==========
+        console.log(42 === 42); // Output: true
+        console.log(42 === "42"); // Output: false
+        console.log(42 == "42"); // Output: true (loose equality)
+
+        // ========== NUMBER SPECIAL VALUES ==========
+        console.log(0/0); // Output: NaN
+        console.log(Infinity); // Output: Infinity
+        console.log(-Infinity); // Output: -Infinity
+    </script>
+</body>
+</html> 
+</body>
+</html>
