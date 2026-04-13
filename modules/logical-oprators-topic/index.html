@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Logical Operators</title>
+    </head>
+    <body>
+        <main>
+
+        </main>
+        <footer>
+
+        </footer>
+        <script>
+            let age = 35;
+            let marriedStatus = true;
+            console.log(age >= 18 && marriedStatus); // true because both values are true,
+
+            let age2 = 16;
+            let familyMemberLicence = true;
+            console.log (age2 >= 18 || familyMemberLicence); // age is false but the licence is true so the system will return true,
+
+            let age3 = 17;
+            let familyMemberLicence2 = false;
+            console.log (age3 >= 18 || familyMemberLicence2); // age is false and the licence is false so the system will return false, 
+
+            let name = "shani";
+            let haveCar = true;
+        console.log (name === "shani" && !haveCar); // name is true but haveCar is true so !haveCar is false and the system will return false,
+
+         let isNotLoggedIn = false;
+         console.log (!isNotLoggedIn); // isNotLoggedIn is false so !isNotLoggedIn is true and the system will return true,
+
+        </script>
+    </body>
+</html>
