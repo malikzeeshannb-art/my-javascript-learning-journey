@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 18 Practice - Truthy & Falsy</title>
+</head>
+<body>
+
+    <h1>JavaScript Day 18 Practice</h1>
+
+    <script>
+        // Step 1: Testing basic falsy values
+
+        let value = "";
+
+        if (value) {
+            console.log("Empty string is Truthy");
+        } else {
+            console.log("Empty string is Falsy");
+        }
+
+        // Step 2: Change values one by one
+
+        value = 0;
+
+        if (value) {
+            console.log("0 is Truthy");
+        } else {
+            console.log("0 is Falsy");
+        }
+
+        value = null;
+
+        if (value) {
+            console.log("null is Truthy");
+        } else {
+            console.log("null is Falsy");
+        }
+
+        value = undefined;
+
+        if (value) {
+            console.log("undefined is Truthy");
+        } else {
+            console.log("undefined is Falsy");
+        }
+
+        value = false;
+
+        if (value) {
+            console.log("false is Truthy");
+        } else {
+            console.log("false is Falsy");
+        }
+
+        // Step 3: Testing truthy values
+
+        value = " ";
+
+        if (value) {
+            console.log("Space string is Truthy");
+        } else {
+            console.log("Space string is Falsy");
+        }
+
+        value = "hello";
+
+        if (value) {
+            console.log("String 'hello' is Truthy");
+        } else {
+            console.log("String 'hello' is Falsy");
+        }
+
+        value = 10;
+
+        if (value) {
+            console.log("10 is Truthy");
+        } else {
+            console.log("10 is Falsy");
+        }
+
+        // Step 4: Understanding Boolean conversion
+
+        console.log(Boolean(""));        // false
+        console.log(Boolean(0));         // false
+        console.log(Boolean(null));      // false
+        console.log(Boolean(undefined)); // false
+        console.log(Boolean(false));     // false
+
+        console.log(Boolean(" "));       // true
+        console.log(Boolean("hello"));   // true
+        console.log(Boolean(10));        // true
+
+    </script>
+
+</body>
+</html>
