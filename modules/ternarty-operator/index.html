@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 19 - Ternary Operator Practice</title>
+</head>
+<body>
+
+    <h1>JavaScript Day 19 - Ternary Operator</h1>
+    <p>Open console to see output</p>
+
+    <script>
+        // ================================
+        // Day 19 Practice - Ternary Operator
+        // ================================
+
+        // Basic example: checking pass or fail
+        let marks = 50;
+
+        // Instead of using if/else, we use ternary operator
+        let result = marks >= 40 ? "Pass" : "Fail";
+
+        console.log("Result:", result);
+
+
+        // Another simple example: age check
+        let age = 20;
+
+        let canVote = age >= 18 ? "Allowed to vote" : "Not allowed to vote";
+
+        console.log("Voting status:", canVote);
+
+
+        // Simple real-life style example
+        let isLoggedIn = true;
+
+        let message = isLoggedIn ? "Welcome back user" : "Please login first";
+
+        console.log(message);
+
+
+        // --------------------------------
+        // Practice notes:
+        // Ternary = short form of decision making
+        // condition ? value_if_true : value_if_false
+        // --------------------------------
+
+        // My understanding:
+        // - If condition is true → first value runs
+        // - If condition is false → second value runs
+        // - It returns value, not true/false
+
+    </script>
+
+</body>
+</html>
