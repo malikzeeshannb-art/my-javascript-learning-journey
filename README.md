@@ -9,35 +9,31 @@ Every concept, experiment, and mini project is stored with clarity and professio
 
 ---
 
-## 📁 Repository Structure
-javascript-learning/
-│
-├── modules/
-│ ├── variables-and-data-types/
-│ ├── functions-and-scope/
-│ ├── arrays-and-objects/
-│ ├── dom-manipulation/
-│ ├── events/
-│ ├── async-js/
-│ ├── error-handling/
-│ ├── api-fetching/
-│ └── ...
-│
-├── playground/
-│ ├── mini-projects/
-│ └── snippets/
-│
-├── assets/
-│ ├── images/
-│ ├── audio/
-│ └── videos/
-│
-├── docs/
-│ ├── concepts/
-│ └── notes/
-│
-└── README.md
+## Repository Structure
 
+```text
+javascript-learning/
+├── modules/
+│   ├── variables-and-data-types/
+│   ├── functions-and-scope/
+│   ├── arrays-and-objects/
+│   ├── dom-manipulation/
+│   ├── events/
+│   ├── async-js/
+│   ├── error-handling/
+│   ├── api-fetching/
+│   └── ...
+├── playground/
+├── mini-projects/
+├── snippets/
+├── assets/
+│   ├── images/
+│   ├── audio/
+│   └── videos/
+├── docs/
+│   ├── concepts/
+│   └── notes/
+└── README.md
 ---
 
 ## 📦 Folder Descriptions
