@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 21 Practice - While Loop</title>
+</head>
+<body>
+
+  <h1>JavaScript While Loop Practice</h1>
+
+  <script>
+    // Day 21 — While Loop Practice
+
+    // Basic idea test
+    let i = 1;
+
+    // counting from 1 to 5
+    while (i <= 5) {
+      console.log("Current value of i:", i);
+
+      // increasing value
+      i++;  
+    }
+
+    console.log("Loop finished ✅");
+
+
+    // checking what happens if condition is false at start
+    let x = 10;
+
+    while (x <= 5) {
+      console.log("This will not run");
+      x++;
+    }
+
+    console.log("Second loop checked ❌");
+
+
+    // testing infinite loop concept (safely)
+    let y = 1;
+
+    while (y <= 3) {
+      console.log("y value:", y);
+
+      // if I remove this, loop will become infinite
+      y++;
+    }
+
+    console.log("Third loop done 🔁");
+
+
+    // final understanding
+    // loop runs while condition is true
+    // stops when condition becomes false
+
+  </script>
+
+</body>
+</html>
