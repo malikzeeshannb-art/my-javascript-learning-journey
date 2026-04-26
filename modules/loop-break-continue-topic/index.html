@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>break and continue in Loop</title>
+</head>
+<body>
+<script>
+    // Day 23 Practice — Loop Control (break & continue)
+
+// Example 1: using break (stop loop at 8)
+for (let i = 1; i <= 10; i++) {
+  if (i === 8) {
+    break;
+  }
+  console.log("Value:", i);
+}
+
+console.log("----");
+
+// Example 2: skipping even numbers using continue
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 === 0) {
+    continue;
+  }
+  console.log("Odd:", i);
+}
+
+console.log("----");
+
+// Example 3: skipping odd numbers using continue
+for (let i = 1; i <= 10; i++) {
+  if (i % 2 !== 0) {
+    continue;
+  }
+  console.log("Even:", i);
+}
+    </script>
+</body>
+</html>
