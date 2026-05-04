@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 28 - Functions Practice</title>
+</head>
+<body>
+    <h1>JavaScript Day 28 - Functions Practice</h1>
+
+    <script>
+        // 1) This function prints a simple welcome message.
+        // It is reusable, so we can call it many times.
+        function greetUser() {
+            console.log("Hello! Welcome to my JavaScript practice.");
+        }
+
+        // 2) This function checks age and prints a message.
+        // It uses if/else to make a decision.
+        function checkAge() {
+            let age = 18;
+
+            if (age >= 18) {
+                console.log("You are an adult.");
+            } else {
+                console.log("You are still a minor.");
+            }
+        }
+
+        // 3) This function checks a username.
+        // If the name matches, it gives a welcome message.
+        function checkUserName() {
+            let userName = "zeeshan";
+
+            if (userName === "zeeshan") {
+                console.log("Welcome back, Zeeshan!");
+            } else {
+                console.log("User not found.");
+            }
+        }
+
+        // 4) This function checks bus time status.
+        // It compares two values and prints the result.
+        function busStatus() {
+            let busTime = "sixInMorning";
+
+            if (busTime === "sixInMorning") {
+                console.log("Bus is at the station. Hurry up!");
+            } else {
+                console.log("You are late for the bus.");
+            }
+        }
+
+        // 5) This function adds two numbers and shows the result.
+        // It is used for a small calculation example.
+        function addNumbers() {
+            let num1 = 5;
+            let num2 = 3;
+            let sum = num1 + num2;
+
+            console.log("The sum is: " + sum);
+        }
+
+        // Calling the functions below.
+        // This is the part where the function runs.
+        greetUser();
+        checkAge();
+        checkUserName();
+        busStatus();
+        addNumbers();
+    </script>
+</body>
+</html>
