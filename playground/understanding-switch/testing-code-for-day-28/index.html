@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Example</title>
+</head>
+<body>
+    <h1>Running three function at many places and then call them at any place, task provided by chatGPT!</h1>
+    <script>
+        function ageCount () {
+            let age = 15 + 3; 
+            if (age >= 18) {
+                console.log("you're adult and you are fully allowd to use our all services.");
+            }
+            else {
+                console.log("minor user!");
+            }
+        }
+
+        function userInfo () {
+            let userName = "zeeshan";
+        if (userName === "zeeshan") {
+            console.log("welcome back sir!");
+        }
+        else {
+            console.log("try again!");
+        }
+    }
+
+        function bussStatus () {
+            let bussTime = "fiveMorning";
+            if (bussTime === "sixInMorning") {
+                console.log("buss is still on station, do it fast!");
+            }
+            else {
+                console.log("you're pritty late!");
+            }
+             
+        }
+
+        // recalling function:
+        ageCount () // output = you're adult and you are fully allowd to use our all services.
+        userInfo () // output = welcome back sir!
+        bussStatus () // output = you're pritty late!
+    </script>
+</body>
+</html>
