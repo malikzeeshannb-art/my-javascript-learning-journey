@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-=device-width,initial-scale=1.0">
+    <title>Testing Peramiters & Arguments!</title>
+</head>
+<body>
+    <script>// Day 29 - Function Parameters
+// Trying to understand how input works in functions
+
+// simple greet function
+function greet(name) {
+  // name is coming from outside (argument)
+  console.log("Hello " + name); // prints message with given name
+}
+
+// calling function with different values
+greet("Zeeshan");  // Hello Zeeshan
+greet("Ali");      // Hello Ali
+greet("Sara");     // Hello Sara
+
+
+// another example to make it more clear
+
+function add(a, b) {
+  // a and b are parameters (placeholders)
+  let result = a + b; // using the values
+  console.log(result);
+}
+
+// passing arguments
+add(5, 3);   // 8
+add(10, 20); // 30
+
+
+// quick note for myself:
+// parameter = variable inside function
+// argument = actual value when calling function
+
+// I think of it like:
+// parameter = empty box
+// argument = value inside the box
+</script>
+</body>
+</html>
