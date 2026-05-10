@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-=device-width,initial-scale=1.0">
+    <title>function arrow</title>
+</head>
+<body>
+    <script>
+        // JavaScript Day 31 - Arrow Functions
+
+// 1) Simple arrow function with no parameter
+const greet = () => {
+  console.log("Hello!");
+};
+
+greet(); // Hello!
+
+// 2) Arrow function with one parameter
+const square = (num) => {
+  return num * num;
+};
+
+const squareResult = square(5);
+console.log("Square is:", squareResult); // Square is: 25
+
+// 3) Arrow function with multiple parameters
+const add = (a, b) => {
+  return a + b;
+};
+
+const addResult = add(4, 6);
+console.log("Addition is:", addResult); // Addition is: 10
+
+// 4) Short form arrow function
+const multiply = (a, b) => a * b;
+
+const multiplyResult = multiply(3, 7);
+console.log("Multiply is:", multiplyResult); // Multiply is: 21
+
+// 5) Converting a normal function into an arrow function
+
+// Normal function
+function divide(x, y) {
+  return x / y;
+}
+
+// Arrow function version
+const divideArrow = (x, y) => {
+  return x / y;
+};
+
+console.log("Normal divide:", divide(10, 2)); // 5
+console.log("Arrow divide:", divideArrow(10, 2)); // 5
+
+// 6) Final checkpoint
+console.log("Same output, different syntax.");
+        </script> 
+        </body>
+        </html>
