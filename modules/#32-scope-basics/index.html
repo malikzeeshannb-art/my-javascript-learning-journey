@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing local variables and global scope</title>
+</head>
+<body>
+    <script>
+        // Day 32 — Scope Practice (Self Notes)
+
+// Global scope test
+let username = "Zeeshan";
+
+function checkGlobal() {
+  console.log("Inside function:", username); // accessible
+}
+
+checkGlobal();
+console.log("Outside function:", username); // accessible
+
+// -----------------------------
+
+// Local scope test
+function checkLocal() {
+  let age = 22;
+  console.log("Inside function:", age); // accessible
+}
+
+checkLocal();
+// console.log(age); ❌ Error — not accessible outside
+
+// -----------------------------
+
+// Function to function test
+function first() {
+  let secret = "hidden";
+  return secret; // sending value out
+}
+
+function second(data) {
+  console.log("Received:", data);
+}
+
+let result = first();
+second(result);
+
+// -----------------------------
+
+// Final understanding (my words)
+// Global = can use anywhere
+// Local = only inside function
+// One function cannot access another function's local variable directly
+// Best way = pass values instead of using too many globals
+    </script>
+</body>
+</html>
