@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=0.1">
+        <title>#33-Revison Task!</title>
+    </head>
+    <body>
+        <script>
+            // task number one!
+            function sum() {
+                return 4 + 6;
+            }
+            let result = sum();
+            console.log(result);
+
+            //task number 2!
+              function isEven(number) {
+                if (number % 2 === 0) {
+                    return "even";
+                }
+                return "odd";
+              }
+              console.log(isEven(3));
+
+            //task number 3!
+            function productPrice() {
+                let realPrice = 1000;
+                let discount = 150;
+                return realPrice - discount;
+            }
+            console.log("the final price of product is:", productPrice());
+
+            //task number 4!
+            const toSeconds = (minuts) => minuts * 60;
+            console.log(toSeconds(3));
+
+           //task number 5!
+           function marks(totalMarks) {
+            if (totalMarks >= 80) {
+                return "you've got the first position!";
+            }
+             else if (totalMarks >= 60) {
+                return "congragulations you're pass!";
+            }
+            else if (totalMarks >= 40) {
+                return "Pass";
+            }
+                return "Fail";
+           }
+           console.log(marks(40));
+
+           // question number 1: what is function?
+           // the function is a small reusable block that runs the logic in it and give the output, and we can make a function at once and can use at many time by just recalling it.
+
+           // question number 2: what are the parameteras? 
+           // perameters are the inputs / placeholders and we fill these inputs by callind the function, like this: greet("Hello"); 
+
+           // question number 3: what dose the return do? 
+           // return sends the valie back where it's called and also it's run the function.
+
+           // qustion number 4: what is scope?
+           // the scope is used to define the variable's visiblety, for example is the variable is the outside t he function it's the global scope and if the variable is inside the function it's the local scope.
+
+           // question number 5: what is the main purpose of errw function? 
+           // the errow function is the short form to writing the function, it's used to write inorder to make the function's syntex shorter and clean.
+
+           /* question number 6:  What will this return?
+function square(n) {
+  retrn n * n;
+}  
+  if we will write the console.log(square(4)) the outpt is going to be 16. because 4*4=16 */
+           /* question number 7: What is the output?
+function sayHello() {
+  console.log("Hello");
+} 
+  this is not gonna rub because we are not doing anything with function by recalling it, and we've started printing the hellow */
+        /* Question number 8:
+Can a function work with no parameters? 
+            the answeris yes! because the functiion cn return the value back that we have puted in to return! */
+            
+            // rewriting the function after 5 hours on order to test my saved memory!
+            function isEven(number) {
+                if (number % 2 === 0) {
+                    return "this is an even number!";
+                }
+                return "this is an odd number!";
+             }
+             console.log(isEven(67893276878));
+
+             // second function.
+             function sum(a, b) {
+                return a + b;
+             }
+             let output = sum(3, 10);
+             console.log(output);
+
+             function productPrice(price, discount) {
+                return price - discount;
+             }
+             let finalPrice = productPrice(1000, 150);
+             console.log("the final price of product is:", finalPrice);
+
+             function test(a) {
+}
+let x = test(5);
+console.log(x); // Output: undefined
+
+        </script>
+    </body>
+</html>

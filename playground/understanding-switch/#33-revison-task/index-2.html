@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=0.1">
+        <title>#33-Revison Task!</title>
+    </head>
+    <body>
+        <h1>Task provided by chatGPT:</h1>
+        <h3>Build a Mini Utility System using functions.</h3>
+        <script>
+            /* 1) Create these functions:
+A — Calculator 8 */
+            function colculate(a, b, operator) {
+                if (operator === "+") {
+                    return a + b;
+                }
+                if (operator === "-") {
+                    return a - b;
+                }
+                 if (operator === "*") {
+                    return a * b;
+                 }
+                 if (operator === "/") {
+                    return a / b;
+                 }
+            }
+            console.log(colculate(2, 3, "*")); // the output is the: 6
+            
+            // B — Number Analyzer 
+             function analyzeNumber(num) {
+                if (num % 2 === 0) {
+                    return "posative even";
+                }
+               
+                else if (num % -2 === 0) {
+                    return "negative even";
+                }
+                
+                
+
+                 else { 
+                    console.log("posative odd");
+                }
+             }
+              console.log(analyzeNumber(-4))
+
+              // c - Price Formatter 
+              function finalPrice(price, discount) {
+                return price - discount;
+              }
+              console.log(finalPrice(1900, 400));
+
+              // D — Time Converter
+               function timeConverter(minuts) {
+                return minuts * 60;
+               }
+               console.log(timeConverter(3));
+
+               // E — Grade Checker
+               function gradeCheck(marks) {
+                if (marks >= 85) {
+                    console.log("congratulation you've got the first position");
+                }
+                else if (marks >= 75) {
+                    console.log("B grade!");
+                }
+                else if (marks >= 50) {
+                    console.log("C grade");
+                }
+                else {
+                    console.log("Fail");
+                }
+               }
+               console.log(gradeCheck(98));
+            </script>
+    </body>
+</html>
