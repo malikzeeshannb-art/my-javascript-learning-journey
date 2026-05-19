@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=0.1">
+        <title>#35-Adding & Removing Items From Array</title>
+    </head>
+    <body>
+        <!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 35 - Array Methods Practice</title>
+</head>
+<body>
+<h1>JavaScript Array Methods Practice</h1>
+
+<script>
+    // Initial Array
+    let fruits = ["apple", "banana", "mango"];
+    console.log("Original Array:", fruits);
+
+    // 1. Add item to the end (push)
+    fruits.push("orange");
+    console.log("After push:", fruits);
+
+    // 2. Remove last item (pop)
+    let removedLast = fruits.pop();
+    console.log("Removed last item:", removedLast);
+    console.log("After pop:", fruits);
+
+    // 3. Remove first item (shift)
+    let removedFirst = fruits.shift();
+    console.log("Removed first item:", removedFirst);
+    console.log("After shift:", fruits);
+
+    // 4. Add item in the middle (splice)
+    fruits.splice(1, 0, "grape");
+    console.log("After adding in middle:", fruits);
+
+    // 5. Remove item from middle (splice)
+    fruits.splice(1, 1);
+    console.log("After removing from middle:", fruits);
+
+    // 6. Replace item using splice
+    fruits.splice(1, 1, "pineapple");
+    console.log("After replacing item:", fruits);
+</script>
+
+</body>
+</html>
