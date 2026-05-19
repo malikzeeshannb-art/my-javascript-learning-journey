@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=0.1">
+        <title>#36-Array Method 2</title>
+    </head>
+    <body>
+        <script>
+            let fruits = ["apple", "banana", "mango"];
+
+fruits.splice(2, 0, "grapes");
+fruits.splice(3, 0, "pinapple");
+
+console.log(fruits, "first code ends here!"); // ["apple", "banana", "grapes", "pinapple", "mango"]
+
+        // task provided by chatGPT: Mission: You have to copy part of an array AND modify the original array.
+        let items = ["pen", "pencil", "eraser", "sharpener", "scale"];
+            let stationaryItems = items.slice(1, 3); // the output is: ['pencil', 'eraser']
+
+            console.log(stationaryItems);
+            items.splice(2, 1, "marker") // now we have remove the erase and aded the marker instead of erase.
+
+        console.log(items);
+        </script>
