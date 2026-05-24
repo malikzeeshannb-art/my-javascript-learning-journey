@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width,device-width, initial-scale=0.1">
+        <title>itration method map()</title>
+    </head>
+    <body>
+        <h1>itration methods practice!</h1>
+        <script>
+            //example first!
+            let weekDays = ["sunday", "monday", "tuesday", "wednesday"];
+            let upperCase = weekDays.map(function(uper) {
+                return uper.toUpperCase();
+            });
+            console.log(upperCase);
+
+            //example second!
+            let number = [1, 2, 3, 4, 5];
+            let devider = number.map(function(devided) {
+                return devided * 5;
+            });
+            console.log(devider);
+
+            /* task provied by chatGPT and here is the task: 👉 Practice once without looking
+💻 Practice task (looks like your editor work)
+// Practice Task - Day 37
+
+let names = ["ali", "ahmed", "zain", "hassan"];
+
+let result = names.map(function(name) {
+  return name.toUpperCase();
+});
+
+console.log(result);
+If you can write this yourself → you’re progressing like a serious dev.
+If not → revise once, then rewrite.*/
+
+            let names = ["ali", "zain", "hamza", "jammal", "fahad", "hannan"];
+            let result = names.map(function(name) {
+                return name.toUpperCase();
+            });
+            console.log(result);
+        </script>
+    </body>
+</html>
