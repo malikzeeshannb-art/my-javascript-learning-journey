@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 38 Practice</title>
+</head>
+<body>
+
+    <h1>JavaScript Day 38 - Filtering & Searching</h1>
+    <p>Open console to see results</p>
+
+    <script>
+        // Step 1: filter() - get all items > 50
+        let numbers = [10, 25, 60, 80, 30];
+
+        let filteredNumbers = numbers.filter(function(num) {
+            return num > 50;
+        });
+        console.log("Step 1 - Filter:", filteredNumbers);
+
+
+        // Step 2: find() - get first item > 50
+        let firstNumber = numbers.find(function(num) {
+            return num > 50;
+        });
+        console.log("Step 2 - Find:", firstNumber);
+
+
+        // Step 3: Using objects + filter()
+        let products = [
+            { name: "Shampoo", price: 50 },
+            { name: "Perfume", price: 150 },
+            { name: "Oil", price: 80 }
+        ];
+
+        let expensiveProducts = products.filter(function(product) {
+            return product.price > 50;
+        });
+        console.log("Step 3 - Expensive Products:", expensiveProducts);
+
+
+        // Step 4: Using objects + find()
+        let firstExpensive = products.find(function(product) {
+            return product.price > 50;
+        });
+        console.log("Step 4 - First Expensive Product:", firstExpensive);
+
+
+        // Step 5: Using &&
+        let luxuryItems = [
+            { name: "Perfume", price: 150, category: "luxury" },
+            { name: "Oil", price: 80, category: "care" }
+        ];
+
+        let luxuryFiltered = luxuryItems.filter(function(item) {
+            return item.price > 100 && item.category === "luxury";
+        });
+        console.log("Step 5 - Luxury Filter:", luxuryFiltered);
+
+    </script>
+
+</body>
+</html>
