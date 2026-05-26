@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 39 - Objects Practice</title>
+</head>
+<body>
+
+    <h1>Day 39 - JavaScript Objects Practice</h1>
+
+    <script>
+        // ================================
+        // Step 1: Creating an Object
+        // ================================
+        let userProfile = {
+            name: "ahmedAli",
+            age: 27,
+            country: "egypt",
+            profession: "front-End-Developer",
+            isLoggedIn: true,
+            "fav color": "black" // practicing space key
+        };
+
+        // ================================
+        // Step 2: Access using Dot Notation
+        // ================================
+        console.log("Name:", userProfile.name);
+        console.log("Profession:", userProfile.profession);
+
+        // ================================
+        // Step 3: Access using Bracket Notation
+        // ================================
+        console.log("Country:", userProfile["country"]);
+        console.log("Age:", userProfile["age"]);
+
+        // ================================
+        // Step 4: Using Variable as Key
+        // ================================
+        let keyName = "isLoggedIn";
+        console.log("Is user logged in?", userProfile[keyName]);
+
+        // ================================
+        // Step 5: Access Key with Space
+        // ================================
+        console.log("Favorite Color:", userProfile["fav color"]);
+
+        // ================================
+        // Step 6: Using Template Strings
+        // ================================
+        console.log(`User ${userProfile.name} is ${userProfile.age} years old`);
+        console.log(`User lives in ${userProfile.country}`);
+        console.log(`Profession: ${userProfile.profession}`);
+        console.log(`Login Status: ${userProfile.isLoggedIn}`);
+
+    </script>
+
+</body>
+</html>
