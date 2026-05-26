@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 39 Practice</title>
+</head>
+<body>
+
+<h1>Object Basics!</h1>
+<script>
+    let user = {
+  name: "Ali",
+  age: 22,
+  country: "Pakistan",
+  phoneModel: "i-phone",
+  gender: "male",
+  home: "pindi"
+};
+
+console.log("the user name is:", user.name);
+console.log("and user lives in:", user["country"]);
+console.log("user's age is:", user["age"]);
+console.log("user have:", user.phoneModel);
+console.log("user's gender is:", user["gender"]);
+console.log("and he lives in:", user.home);
+
+//task provided by GPT!
+
+/* Day 39 — Task (Client Style Challenge)
+You’re building a basic user profile system.
+Task Requirements:
+Create an object called userProfile with the following data:
+name
+age
+country
+profession
+isLoggedIn (boolean)
+Operations you must perform:
+Print this line:
+User [name] is [age] years old
+Print:
+User lives in [country]
+Print:
+Profession: [profession]
+Print login status:
+Is user logged in? [true/false]
+Important Constraints (follow strictly):
+Use dot notation at least 2 times
+Use bracket notation at least 2 times
+One key must be accessed using a variable
+let keyName = "name";
+Bonus (to push your thinking):
+Add a key with space in it:
+"fav color": "black"
+→ Access it properly
+When you’re done, paste your code. I’ll review it like a senior dev — no mercy, only growth.*/
+
+let userProfile = {
+    name: "ahmedAli",
+    age: 27,
+    country: "egypt",
+    profession: "front-End-Developer",
+    isLoggedIn: true,
+    'fav color': "black"
+}
+let keyName = "isLoggedIn"; 
+//print 1!
+console.log(`User ${userProfile.name} is ${userProfile["age"]} years old`);
+//print 2!
+console.log("User living in:", userProfile["country"]);
+//print 3!
+console.log("profession",  userProfile.profession);
+//print 4! task Print Login status:
+console.log("Is user logged in?", userProfile[keyName]);
+//print 5!
+console.log(userProfile["fav color"]);
+</script>
+</body>
+</html>
