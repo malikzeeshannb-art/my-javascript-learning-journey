@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 28 - Functions Practice</title>
+</head>
+<body>
+    <h1>JavaScript Day 28 - Functions Practice</h1>
+
+    <script>
+        /* function ageCount() {
+            let age = 15 + 3;
+            if (age >= 18) {
+                //console.log("You're an adult and you are fully allowed to use all our services.");
+            } else {
+              //  console.log("Minor user!");
+            }
+        } 
+
+        function product(price) {
+            let userHave = 400;
+
+            if (price < userHave) {
+                //console.log("the product price is: ", price, "and youu have, ", userHave, " so definately you can buy it!");
+            }
+           else if (price < userHave) {
+              //  console.log("the real price of product is: ", price, "you can buy it, becayse you have", userHave);
+            }
+            else {
+               // console.log("recharge your account!");
+            }
+        }
+        //product(600);
+        //product(300);
+
+         // task 1 provided by GEMINI.
+
+        function greetUser(name, timeOfDuty) {
+            // console.log("Good", timeOfDuty, name, "Hope You're Having A Productive Day.");
+        }
+        greetUser("Ali", "Morning!");
+        greetUser("Hamza", "Evening");
+        greetUser("Nisar", "After noon");
+        greetUser("Zeeshan", "Evening");
+         
+        //task number 2 provided by GEMINI.
+         function items(price, quantity) {
+            let total = price * quantity;
+            //console.log("the total cost for", quantity, "items at", price, "each is", total);
+         }
+         items(600, 3);
+
+         //task number 3 provided by GEMINI.
+
+         function product(totalAmount, discountCode) {
+            let discount = totalAmount * 0.1;
+            // console.log("the discount amount is:", discount);
+             let total = totalAmount - discount;
+            if (discountCode === "SAVE10") {
+             //   console.log("the amount of product is:", totalAmount, "the total with 10% of discount is:", total);
+            }
+            else {
+               // console.log("the total amount is:", totalAmount, "without discount!");
+            }
+         }
+            product(1000, "SAVE10");
+
+            // task number 3: 
+
+            let totalAmount = [];
+             function product(price, texRate) {
+                let text = price * 0.05;
+                let total = price - texRate - text;
+                return price, text, total;
+             }
+             totalAmount.push(product(50, 25));
+       // console.log("the total price with discount is:",totalAmount);
+
+        // task 4 temprature converter: 
+        function convertToCelsius(fahreanheit) {
+            return (fahreanheit - 32) * 5 / 9
+        }
+        let bodyTempC = convertToCelsius(98);
+        if (bodyTempC < 31) {
+           // console.log("fiver detected!");
+        }
+        else {
+          //  console.log("the body temprature is normal!");
+        }
+
+        //task 5: grade calculator:
+
+        function colculateGrade(score) {
+            if (score >= 90) {
+                return "A grade!";
+            }
+            else if (score >= 70) {
+                return 'B grade!';
+            }
+            else return "C grade!";
+        }
+        let studentResult = colculateGrade(76); // the result will be b grade!
+            // console.log(studentResult);
+        let student = [];
+        
+                     student.push(studentResult);
+               // console.log(student);
+
+                // task number 6:
+                function multiplyByTwo(x) {
+                    return x + x;
+                }
+                let resultArray = [];
+                resultArray.push(multiplyByTwo(10));
+                resultArray.push(multiplyByTwo(20));
+                resultArray.push(multiplyByTwo(30));
+                //console.log(resultArray);
+
+                for(let y = 1; y <= 20; y++) {
+                    // console.log("the current value of y is:", y);
+                }
+
+                let products = [
+    {name: "Laptop", price: 1000},
+    {name: "Phone", price: 3000},
+    {name: "Keyboard", price: 4000}
+];
+
+const applyDiscount = (price) => price * 0.20;
+
+function processCart(cartArray) {
+    let discountedItems = []; // Yahan hum naye result store karenge
+
+    for (let x = 0; x < cartArray.length; x++) {
+        let originalPrice = cartArray[x].price; // Ek product ki price uthai
+        let discount = applyDiscount(originalPrice); // Discount calculate kiya
+        
+        // Ek naya object banaya aur array mein push kiya
+        discountedItems.push({
+            name: cartArray[x].name,
+            newPrice: originalPrice - discount
+        });
+    }
+
+    return discountedItems; // Pura result wapas bhej diya
+}
+    */
+
+//let result = processCart(products);
+// console.log(result);
+/*
+let productive = [
+    {name: "shampoo", price: 1000},
+    {name: "saban", price: 500},
+    {name: "saraf", price: 600},
+    {name: "water", price: 700},
+    {name: "salt", price: 800},
+    {name: "vagitable", price: 900},
+];
+const discountedItems = productive.map((item) => {
+    return {name: item.name,
+        price: item.price - (item.price * 0.20)
+    };
+});
+//console.log(discountedItems); 
+
+// task 
+
+let aray = [10, 20, 30, 40, 50];
+
+    const square = aray.map((num) => num * num);
+    let numbers = square;
+        //console.log(numbers);
+
+        // next task:
+        let users = [
+            { name: "Ali", age: 20 },
+             { name: "Sara", age: 15 },
+              { name: "John", age: 25 }
+        ];
+        const allUsers = users.map((user) => {
+            if (user.age > 18) {
+              //  console.log("user is adult with", user.age, "years old, and user name is:", user.name);
+            }
+            else {
+              //  console.log("user is minor, user's age is", user.age, "& user name is", user.name);
+            }
+        });
+        
+        const adultUsers = users.map((adult) => adult.age > 18 ? "Status: Adult" : "Status: Minor");
+        //console.log(adultUsers);
+
+        // next task:
+
+        let students = [
+            {name: "zeeshan", marks: 50},
+            {name: "shan", marks: 75},
+            {name: "eshan", marks: 92}
+        ];
+        const getGrade = (marks)  => { 
+            if (marks >= 90) {
+                return "A Grade!";
+            }
+            else if (marks >= 70) {
+                return "B Grade!";
+            }
+            else {
+                return "C Grade!";
+            }
+        };
+let reportCaed = students.map((ret) => {
+    return {
+        name: ret.name,
+        marks: ret.marks,
+        grade: getGrade(ret.marks)
+    };
+});
+console.log(reportCaed); */
+
+
+/*let employes = [
+    {name: "zafar", marks: 38, depart: "IT"},
+        {name: "zareef", marks: 38, depart: "devloper"},
+
+            {name: "zeeshan", marks: 60, depart: "IT"},
+
+                {name: "zaman", marks: 79, depart: "devloper"},
+
+                    {name: "shani", marks: 89, depart: "backEnd"},
+
+                        {name: "eshan", marks: 53, depart: "backEnd"},
+
+                            {name: "billa", marks: 88, depart: "IT"}
+
+];
+const departs = employes.filter((stafs) => stafs.depart === "IT" && stafs.marks >= 60);
+const finalResult = departs.map((result) => {
+    return {
+        ...result,
+         status: "Premiume"
+    };
+});
+// console.log(finalResult); // now the final result is the employes whos departments is IT and their marks are greater than or equal to 60, and also we added a new property in our final result which is status and it's value is premiume.
+
+// task number 2:  
+let store = [
+    { item: "Pen", stock: 10, price: 32 },
+
+        { item: "Pincle", stock: 7, price: 14 },
+
+            { item: "eraser", stock: 8, price: 14 },
+
+                { item: "marker", stock: 1, price: 52 },
+
+                    { item: "pointer", stock: 15, price: 32 },
+
+                        { item: "balpen", stock: 18, price: 50 }
+
+        ];
+    const processInventry = store.filter((lowStockList) => lowStockList.stock <= 5);
+        const alrt = processInventry.map((alertList) => {
+            return {...alertList,
+                restockRequired: true
+            };
+        });
+        console.log(alrt); 
+
+        // new task: the secret vault Manager!
+
+        const bankName = "Alrajhi-Bank";
+        let accounts = [
+            { id: 1, balance: 500 },
+             { id: 2, balance: 1500 },
+              { id: 3, balance: 200 }
+        ];
+        function auditAccounts(list) {
+            let auditStatus = "veryfied";
+            let blnsInq = accounts.filter((balanceInq) => balanceInq.balance > 1000);
+             let bla = blnsInq.map((balanceInq) => {
+                return {
+                    ...balanceInq,
+                    status: auditStatus
+                };
+            });
+            console.log(bankName);
+            return  ;
+        }
+        let finalResul = auditAccounts(accounts);
+                    console.log(finalResul); */
+
+                    // the ultimate personal organizer task:
+
+     /* const favorites = [
+           {name: "Laptop", category: "Tech", rating: 9},
+             {name: "Smartphone", category: "Tech", rating: 8},
+               {name: "Tablet", category: "Tech", rating: 7},
+                 {name: "Smartwatch", category: "Tech", rating: 6},
+                   {name: "Headphones", category: "Tech", rating: 5},
+                     {name: "Camera", category: "Tech", rating: 4},
+                       {name: "Speaker", category: "Tech", rating: 3}
+                     ];
+
+        const getName = favorites.map((obj) => obj.name);
+        // console.log(getName);
+        const isHighRated = favorites.map((obj) => obj.rating > 8);
+        //console.log(isHighRated);
+        const getCategory = favorites.map((obj) => obj.category);
+        const updateRating = favorites.map((obj, newRate) => newRate.rating = 10);
+        // console.log(updateRating);
+        const formateItem = favorites.map((obj) => obj.name + obj.category);
+        // console.log(formateItem);
+       // console.log("Total favorates:", favorites[1]); output is: smartphone......, because it's index is 1, and index starts from 0.
+      // console.log("Total favorates:", favorites.length); 
+        let filteredItems = isHighRated.filter((items) => items);
+
+        // console.log(filteredItems);
+      // console.log(favorites);
+
+      let allFavorates = favorites.map((fIters) => {
+        return {
+            ...fIters,
+            otherFavorateItems: formateItem
+        };
+      });
+    //  console.log(allFavorates);
+      //local variable:
+      let time = "02:50pm"; // global scope example.
+      const currentTime = () => {
+       // let timeStamp = "02:45pm";  local scope example.
+      //  let timeStamp = time;
+       // console.log(time); 
+      };
+      currentTime();
+    //  console.log(timeStamp);  wrong / error / time stump is not define error / because we are trying to print function's variable globally.
+      // task number 16 the Labrary Index:
+
+      let books = [
+        { title: "JS Guide", author: "Ali" },
+         { title: "JS Guide", author: "Ahmed" },
+          { title: "JS Guide", author: "Ahzam" },
+           { title: "JS Guide", author: "Abdullah" },
+            { title: "JS Guide", author: "Asim" },
+             { title: "JS Guide", author: "Ali-Abbas" }
+      ];
+      
+      books.push({title: "JS Guide", auther:  "Hameed"});
+            books.push({title: "JS Guide", auther:  "rashid"});
+
+                  books.push({title: "JS Guide", auther:  "zareef"});
+
+                        books.push({title: "JS Guide", auther:  "naseeb"});
+      books.splice(2, 0, "tester");
+    //  books.splice(1, 2, "zeeshanmalik");
+      //let remove = books.pop();
+      //console.log(remove);
+     // books.shift();
+    // console.log(books);
+      function getLabrarySize(list) {
+        return books.length;
+      }
+      //console.log(getLabrarySize(books));
+
+      const getFirstBook = (list) => books[3]; 
+      // console.log(getFirstBook(books)); this will return the "abdillah's" object, because that object's index is 3 even that is physically at number 4. & in Java-Script indexing starts from 0.
+
+      const newAdded = books.map((pluss) => {
+        return {
+            ...pluss,
+            ID: "place-holder"
+        };
+      });
+      // console.log(newAdded); this will add a new property and a value "place-holder" with every object.
+
+           let lastUpdated = "02-march-2023";
+      function functions() {
+        let lastUpdated = "03-apr-2026"; 
+       // console.log(lastUpdated); i got that the consle will print the local variable first.
+      }; 
+        functions(); */
+      
+
+        // "The Ultimate Inventory Control Task": for task number: 17.
+
+        /* let items = [
+            { name: "Laptop", stock: 5 },
+             { name: "Mouse", stock: 10 },
+              { name: "Keyboard", stock: 8 }
+            ];
+            items.unshift({name: "Monitor", stock: 2 });
+            items.pop(); /*it'll remove the last item and also it can return the item that it has removed       
+            // console.log(items); i check and i got that.
+            items.splice(1, 1); /* i also can add item here by this syntex items.splice(1, 1, "new");
+                let companyName = "GOODLUCK STORE!";
+            let processReport = (list) => {
+                let reportData = "Report data"; //dlibratly.
+                const greenStock = list.filter((products) => products.stock > 3);
+                // console.log(greenStock);
+                const newAdded = greenStock.map((newVar) => {
+                    return {
+                        ...newVar,
+                        status: "Active"
+                    };
+                 }); 
+                 console.log(companyName);
+                 return newAdded;
+            };
+            let finalResult = processReport(items);
+            console.log(finalResult); */
+            /* console.log(reportData); this will throw an error because our variable is inside the function and inside the finction the scope is local and oute side the function the scope is glibal that's mean we can use the global scope anywhere and the local scope only inside the function, and that's why this console.log will throw the error.*/
+            
+
+            // next task: the dynamic waitlist.
+
+           /* let guests = ["ali", "sara", "johan", "zoe"];
+            guests.push("babar");
+            guests.shift();
+            guests.splice(1, 1, "kamran");
+            function formatList(list)  {
+                const count = list.length;
+                console.log(count);
+
+                return list.map((name) => "Guest:" + name);
+        }
+        // console.log(list.length);
+            let result = formatList(guests);
+            console.log(result);*/
+
+        // task number 18 the slice vs splice master!
+
+       /* let task = ["wake up", "pray", "breakfast", "work", "sleep"];
+       task.splice(2, 1); 
+      
+        let morningRoutine = task.slice(0, 2);
+       
+       
+        const getSummary = (arr) => {
+            const originalLength = arr.length;
+
+            return arr.slice(0, 2);
+        }
+         console.log(task);
+          console.log(morningRoutine);
+        console.log(getSummary(task)); */
+
+       /* const tools = ['Docs', 'Meeting', 'Break', 'Coding', 'Testing', 'Deploy'];
+
+        tools.splice(2, 1);
+       // console.log(tools);
+
+        let highPriority = tools.slice(0, 3);
+        let lowPriority = tools.slice(3, 5);
+
+        // console.log(highPriority); 
+        // console.log(lowPriority); 
+        let projectName = "orgnizing thoughts";
+        const processor = (arr) => {
+            console.log(projectName);
+            return arr.map((task) => {
+                return {
+                    task: task,
+                    status: "pending"
+                };
+            });
+        }
+        let result1 = processor(highPriority);
+        let result2 = processor(lowPriority);
+        console.log(result1, "high");
+        console.log(result2, "low");*/
+
+
+        /*let staff = [
+            { id: 1, name: "Zafar", exp: 2 },
+             { id: 2, name: "Zareef", exp: 6 },
+              { id: 3, name: "Zeeshan", exp: 8 },
+               { id: 4, name: "Zaman", exp: 4 }
+            ];
+            staff.shift();
+            staff.push({id: 5, name: "shani", exp: 5});
+            // console.log(staff);
+           let seniorStaff = staff.slice(1, 3);
+           console.log(seniorStaff);
+
+          function processPromotions(list) {
+            list.map((staf) => "isEligible: ", exp>5);
+            return list.filter((sta) => staf);
+          }
+          console.log(processPromotions(staff));*/
+
+          // task number 19: the empolye promition system!
+
+          /* let staff = [
+            { id: 1, name: "Zafar", exp: 2 },
+             { id: 2, name: "Zareef", exp: 6 },
+              { id: 3, name: "Zeeshan", exp: 8 },
+               { id: 4, name: "Zaman", exp: 4 }
+            ];
+        staff.shift();
+       // console.log(staff);
+       staff.push({ id: 5, name: "Shani", exp: 5 });
+      const seniorStaff = staff.slice(0, 2);
+      // console.log(seniorStaff);
+
+      function processPromotions(list) {
+        let pros = list.map((listd) => {
+            return {
+                ...listd,
+                isEligible: listd.exp > 5
+            };
+        });
+        return pros.filter((listd) => listd.isEligible === true);
+       
+      }
+      let finalResult = processPromotions(staff);
+      console.log(finalResult); */
+
+      // the task loger!
+      let tasks = ["Design", "Develop", "Test", "Deploy"];
+      let user = "shani";
+        let transformation = tasks.map((capitalTasks) => {
+            return capitalTasks.toUpperCase();
+        });
+         transformation.forEach((result) => {
+            let timeStamp = "30-jan-2026";
+            console.log(timeStamp);
+             console.log("Task Compleated:", result);
+             console.log(user);
+            });
+            // console.log(timeStamp); the error is: index.html:528 Uncaught ReferenceError: timeStamp is not defined.
+            
+        </script>
+</body>
+</html>

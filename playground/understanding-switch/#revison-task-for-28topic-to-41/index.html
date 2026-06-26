@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revision task for 28topic to 41</title>
+</head>
+<body>
+    <script>
+        // the E-Commerce analytics engine.
+        /*let products = [
+            { id: 1, name: "Phone", price: 500, stock: 10 },
+             { id: 2, name: "Watch", price: 100, stock: 2 },
+              { id: 3, name: "Laptop", price: 1000, stock: 5 },
+               { id: 4, name: "Mouse", price: 20, stock: 0 }
+            ];
+            products.push({ id: 5, name: "Tablet", price: 300, stock: 8 });
+            products.splice(1, 1);
+            console.log(products);*/
+
+      /*  let products = [
+    { id: 1, name: "Phone", price: 500, stock: 10 },
+    { id: 2, name: "Watch", price: 100, stock: 2 },
+    { id: 3, name: "Laptop", price: 1000, stock: 5 },
+    { id: 4, name: "Mouse", price: 20, stock: 0 }
+];
+
+// Mutation
+products.push({ id: 5, name: "Tablet", price: 300, stock: 8 });
+products.splice(1, 1);
+
+function analyzeStore(list) {
+    let reportType = "Monthly"; // Local
+    
+    // Pipeline: Map -> Filter
+    const processed = list.map(p => ({
+        ...p,
+        tax: p.price * 0.1
+    })).filter(p => p.stock > 0);
+
+    // Iteration: forEach sirf kaam karne ke liye (Logging)
+    processed.forEach(p => {
+        console.log(`Product: ${p.name}, Final Price: ${p.price + p.tax}`);
+    });
+
+    return processed; // Return array
+}
+
+let result = analyzeStore(products);
+console.log("Original List Length:", products.length); */
+
+ // the labrary manager!
+      /*  let books = [
+            { title: "JS Guide", pages: 300, price: 20 },
+             { title: "CSS Basics", pages: 150, price: 10 },
+              { title: "React Pro", pages: 500, price: 40 },
+               { title: "Python 101", pages: 100, price: 15 }
+            ];
+             function processLibrary(list) {
+                let process = list.map(n => ({
+                    ...n,
+                    shipping: n.price * 0.05
+                })).filter(n => n.pages > 200);
+                 process.forEach(q => console.log(q.title, q.price, q.shipping));
+                return process; // Return array
+             }
+             let result = processLibrary(books);
+             
+             console.log(result); // undefined because forEach returns undefined*/
+
+                // next task: the data refiner & merger!
+
+      /* let users = [
+          { id: 1, name: "Ali" },
+           { id: 2, name: "Sara" },
+            { id: 3, name: "Ahmed" }
+          ];
+      let performance = [
+          { id: 1, score: 85 },
+           { id: 2, score: 92 },
+            { id: 3, score: 78 }
+          ];
+     users.forEach(user => user.name, performance.forEach(perf => perf.score));
+     let some = users.map((user, index) => ({
+        ...user,
+        score: performance[index].score
+     }));
+console.log(some); */
+
+                 // task number 1 add students by using function:
+
+/*let students = [
+    {id: 1, name: "Ali", age: 20, marks: 85}
+];
+    function addStudents(list) {
+         list.push(
+            {id: 2, name: "AliHassan", age: 22, marks: 49},
+             {id: 3, name: "Sara", age: 15, marks: 67},
+              {id: 4, name: "John", age: 25, marks: 81});
+              return list;
+    }
+    let result = addStudents(students);
+  // console.log(result);
+
+
+                  // task number 2 delete dtudnets by using function:
+
+      function deleteStudent(studentsArr, id) {
+        return studentsArr.filter(s => s.id !== id);
+      }
+      let deletedStudent = deleteStudent(students, 3);
+      // console.log(deletedStudent);
+
+                   // tasl number 3: update student data by using function.
+
+      function updatedStudentData(list, id, newData) {
+      return list.map(s => s.id === id ? {...s, ...newData} : s );
+        }
+      let updateData = updatedStudentData(students, 2, {name: 'shani', age: 23, marks: 89});
+ console.log(updateData);
+
+   // task number 4:
+
+
+      function getAllStudents(list) {
+        return list.forEach(data => console.log(data));
+      }
+      let endedResult = getAllStudents(students);
+     
+    // task number 5, do it in function:
+
+
+     function getTopStudent(id, marks) {
+        let toper = students.find(s => s.id === id && s.marks > marks);
+        return toper;
+     }
+      let json = JSON.stringify(students); // convert data to JSON.
+       let data = JSON.parse(json); // back to js array.*/
+
+       // new task & final one!
+       
+        /* let students = [
+            {id: 1, name: "AliHassan", age: 22, marks: 49},
+             {id: 2, name: "Sara", age: 15, marks: 67},
+              {id: 3, name: "John", age: 25, marks: 81},
+              {id: 4, name: "Ali", age: 20, marks: 85}
+     ];
+        console.log(students);
+        function addStudent(list) {
+            list.push({id: 5, name: 'shani', age: 23, marks:98});
+            return list;
+        }
+        let result = addStudent(students);
+         //console.log(result);
+
+       // delete student; 
+
+       function deleteStudent(list, id) {
+        return list.filter(s => s.id !== id);
+       }
+       let fresult = deleteStudent(students, 3);
+       // console.log(fresult);
+
+       //update student data!
+       function updatedStudentData(list, id, newData) {
+        return list.map(s => s.id === id ? {...s, ...newData} : s );
+         
+       }
+       students = updatedStudentData(students, 2, {name: 'zaha', age: 14, marks: 67});
+       //console.log(res);
+       
+       // to get students:
+
+       function getAllStudents(list) {
+        return list;
+       }
+       let resu = getAllStudents(students);
+      // console.log(resu);
+       // console.log(students);
+       //task number 5 get toper student:
+
+       function getTopeStudent(list) {
+        return list.find(l => l.marks > 84);
+       }
+       let resul = getTopeStudent(students);
+       //console.log(resul);
+
+       function addStudent(list, student) {
+        return list.push(student);
+       }
+       students = addStudent(students, {id: 5, name: 'shani', age: 20, marks: 61});*/
+
+      /*  let students = [
+            {id: 1, name: "AliHassan", age: 22, marks: 49},
+             {id: 2, name: "Sara", age: 15, marks: 67},
+              {id: 3, name: "John", age: 25, marks: 81},
+              {id: 4, name: "Ali", age: 20, marks: 85}
+     ];
+        //console.log(students);
+
+      function getPassedStudents(list) {
+        return list.filter(s => s.marks >= 60);
+      }
+      let winners = getPassedStudents(students);
+      // console.log(winners);
+
+      // task number 2 -- Search Systerm.
+
+      function findStudentByName(list, name) {
+        return list.find(s=> s.name === name); // i can also ude filter here and the result will still be same.
+      }
+      let student = findStudentByName(students, 'John');
+      //console.log(student); 
+
+     // task number 3: update student marks.
+
+     function updateStudentMarks(list, id, newMarks) {
+      return list.map(s=> s.id === id ? {...s, ...newMarks} : s);
+     }
+      students = updateStudentMarks(students, 4, {marks: 87});
+       //console.log(students);
+
+       // task number 4 "Delete Multiple Condition"
+
+       function removeLowScorers(list) {
+        return list.filter(s=> s.marks > 60); // agr ma > greater then laga raha hu to mery pas woh students ayn gy jinh k marks 60+ hain or agr ma < less then lagaou ga to ma woh studnt keep kr raha hu jo weaks hain / jinh k marks km hain.
+       }
+       let result = removeLowScorers(students);
+       //console.log(result);
+
+       // final task client's task "student insights engine"
+
+      // task number 1 pass students list.
+
+      function passNames(list) {
+         let passStudents = list.filter(s => s.marks > 60)
+          return passStudents.map(s => s.name);
+      }
+       let results = passNames(students);
+       // console.log(results);
+
+       // task number 2: get avrage marks.
+
+       function avrageStudentsMark(list, marks) {
+        let avrage = list.find(s => s.marks > marks);
+        return avrage.marks;
+       }
+       let res = avrageStudentsMark(students, 65);
+       //console.log(res);
+
+        function hasFailures(list) {
+          return list.filter(s => s.marks < 50);
+          
+        }
+        let failStudents = hasFailures(students);
+       // console.log(failStudents, "is involve in failure students list!");
+
+       // client task, Pharmacy Dashboard!
+       */
+
+      /* let medicines = [
+  {id: 1, name: "Panadol", price: 10, stock: 50, category: "pain"},
+  {id: 2, name: "Brufen", price: 20, stock: 0, category: "pain"},
+  {id: 3, name: "Augmentin", price: 50, stock: 30, category: "antibiotic"},
+  {id: 4, name: "Disprin", price: 5, stock: 100, category: "pain"},
+  {id: 5, name: "Flagyl", price: 25, stock: 0, category: "antibiotic"}
+    ];
+
+      // task number 1 filter for in-stock medicines.
+
+        function inStockMedicines(list) {
+          let medicineNames = list.filter(m => m.stock > 0);
+          return medicineNames.map(n => n.name); 
+        }
+        let avilableStock = inStockMedicines(medicines);
+         console.log(avilableStock);
+
+          // task number 2 total available stock price.
+        function totalStock(list) {
+          let medicineNames = list.filter(m => m.stock > 0);
+          let m = medicineNames.map(n =>  n.price * n.stock ); // look i know you gave the diffrent task and i did that and also that was working and now i did this dlibratly because i like this, hahhahah.
+          return m 
+        }
+        let stock = totalStock(medicines);
+        console.log("this is the amount for available stock:", stock);
+
+        // task number 3 find for out-of-stock medicne.
+
+        function outOfStockMedicines(list) {
+          return list.filter(m => m.stock < 1);
+        }
+        let redStock = outOfStockMedicines(medicines);
+          console.log("this is the list for medicines those are out of stock:", redStock);
+
+         // task number 4 filter the medicines for their specific category.
+         function painMed(list, category) {
+         return list.filter(m => m.category === category);
+         }
+         let result = painMed(medicines, "antibiotic");
+         console.log(result);*/
+
+        let students = [
+  {id: 1, name: "Ali", marks: 45},
+  {id: 2, name: "Sara", marks: 78},
+  {id: 3, name: "John", marks: 60},
+  {id: 4, name: "Zain", marks: 30}
+    ];
+    
+      function passStudents(list) {
+        let students = list.filter(s => s.marks >= 50);
+        return students.map(s => s.name);
+      }
+      let passNames = passStudents(students);
+      console.log(passNames, "has pass the test!");
+
+     // task 2:
+
+        function failStudents(list) {
+        let students = list.filter(s => s.marks < 50);
+        return students.map(f => f.name);
+      }
+      let hasFailed = failStudents(students);
+        console.log(hasFailed, "has fail the test!");
+
+      //task 3: 
+
+      function updateData(list, id, newData) {
+       return list.map(s => s.id === id ? {...s, ...newData} : s);
+      }
+      students = updateData(students, 1, {marks: 70});
+       
+
+      // task 4:
+      function getTopStudent(list) {
+        let top = list[0];
+         list.forEach(s => s.marks > top.marks ? top = s : s);
+        return top;
+      }
+      let toper = getTopStudent(students);
+       console.log(toper, "is toper studnet!");
+        </script>
+</body>
+</html>
