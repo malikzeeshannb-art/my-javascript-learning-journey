@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 43 — DOM Basics Practice</title>
+</head>
+<body>
+<!-- Main Section -->
+<h1 id="greeting">Hello Zeeshan</h1>
+<p class="introducing">This is a simple DOM practice paragraph.</p>
+<button id="actionBtn">Click Me</button>
+<!-- Container Section -->
+<div id="container">
+    <h2 class="title">Section Title</h2>
+    <p class="paragraph">This paragraph lives inside the container.</p>
+</div>
+<script>
+    // 🔹 Entry Point
+    console.log(document);
+    // 🔹 Direct Element Selection
+    let heading = document.querySelector("#greeting");
+    let paragraph = document.querySelector(".introducing");
+    let button = document.querySelector("#actionBtn");
+    console.log("Heading:", heading.textContent);
+    console.log("Paragraph:", paragraph.textContent);
+    console.log("Button:", button.textContent);
+    // 🔹 Container Selection (Structure Awareness)
+    let container = document.querySelector("#container");
+    // 🔹 Accessing Inner Elements (Basic Exposure)
+    let innerHeading = container.querySelector(".title");
+    let innerParagraph = container.querySelector(".paragraph");
+    console.log("Inner Heading:", innerHeading.textContent);
+    console.log("Inner Paragraph:", innerParagraph.textContent);
+</script>
+</body>
+</html>
