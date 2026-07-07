@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 48 - Forms Practice</title>
+</head>
+<body>
+
+  <h1>Day 48 — JavaScript Forms Practice</h1>
+
+  <!-- ===================================================
+       TASK 1: Basic Form - Capture Name & Email
+       =================================================== -->
+  <h2>Task 1: Basic Form (Name + Email)</h2>
+  <form id="formData">
+    <strong>Name:</strong>
+    <input type="text" id="name">
+
+    <strong>Email:</strong>
+    <input type="email" id="userEmail">
+
+    <button type="submit">Submit</button>
+
+    <!-- This paragraph will show the captured data -->
+    <p id="output"></p>
+  </form>
+
+  <hr>
+
+  <!-- ===================================================
+       TASK 2: Form with 3 Fields (Name, Age, City)
+       =================================================== -->
+  <h2>Task 2: Extended Form (Name, Age, City)</h2>
+  <form id="userForm">
+    <strong>Name:</strong>
+    <input type="text" id="uName">
+
+    <strong>Age:</strong>
+    <input type="number" id="uAge">
+
+    <strong>City:</strong>
+    <input type="text" id="uCity">
+
+    <button type="submit">Submit</button>
+
+    <p id="userOutput"></p>
+  </form>
+
+  <hr>
+
+  <!-- ===================================================
+       TASK 3: Form Reset After Submit
+       =================================================== -->
+  <h2>Task 3: Form that Resets After Submit</h2>
+  <form id="resetForm">
+    <strong>Feedback:</strong>
+    <input type="text" id="feedback">
+
+    <button type="submit">Submit</button>
+
+    <p id="resetOutput"></p>
+  </form>
+
+  <!-- Linking external JS file. Placed at the bottom so HTML loads first,
+       ensuring all elements exist before script.js tries to select them. -->
+  <script src="script.js"></script>
+</body>
+</html>
